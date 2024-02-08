@@ -1,0 +1,102 @@
+///////* css map */////////////////////
+////* VARIABLES , FONTS, CSS RESET*////
+////* MOBILE code  *///////////////////
+////* DESKTOP code *///////////////////
+////* UTILITIES *//////////////////////
+// VARIABLES , FONTS, CSS RESET
+$font-roboto: "Roboto", sans-serif;
+
+:root {
+    --h4-p-color-tomato: hsl(4, 100%, 67%);
+    --h4-n-dark-slate-gray: hsl(234, 29%, 20%);
+    --h4-n-dark-slate-gray-hover: hsl(234, 29%, 30%);
+    --h4-n-charcoal-grey: hsl(235, 18%, 26%);
+    --h4-n-grey: hsl(231, 7%, 60%);
+    --h4-n-white: hsl(0, 0%, 100%);
+
+    --h4-btn-orange: #ff6644;
+    --h4-btn-tomato: #ff5379;
+
+    --h4-btn-gradient: linear-gradient(
+        90deg,
+        var(--h4-btn-tomato),
+        var(--h4-btn-orange)
+    );
+}
+
+// Primary colors
+.btn-h4-dark {
+    --bs-btn-color: var(--h4-n-white);
+    --bs-btn-bg: var(--h4-n-dark-slate-gray);
+    --bs-btn-border-color: #212529;
+    --bs-btn-hover-color: var(--h4-n-white);
+    // --bs-btn-hover-bg: var(--h4-btn-gradient);
+    // --bs-btn-hover-border-color: #373b3e;
+    --bs-btn-focus-shadow-rgb: 66, 70, 73;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #4d5154;
+    --bs-btn-active-border-color: #373b3e;
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #212529;
+    --bs-btn-disabled-border-color: #212529;
+}
+
+.btn-h4-dark:hover {
+    background-image: var(--h4-btn-gradient);
+    box-shadow: 0 10px 40px -3px var(--h4-btn-tomato);
+}
+// Secondary colors
+
+// FONTS
+
+// CSS RESET
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+// MOBILE code
+
+body {
+    width: 100%;
+    margin: 0;
+    min-height: 100svh;
+    font-family: $font-roboto;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.w-375px {
+    max-width: 375px;
+}
+
+.form__list {
+    list-style-image: url(/assets/images/icon-list.svg);
+}
+
+#mail {
+    cursor: pointer;
+}
+
+#mail:hover {
+    box-shadow: 3px 4px 15px var(--h4-btn-orange);
+}
+
+#mail:invalid {
+    outline: groove red;
+}
+#mail:valid {
+    outline: groove green;
+}
+
+/* Atribution */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+
+    & a {
+        color: hsl(245, 46%, 45%);
+    }
+}
