@@ -38,15 +38,13 @@ emailInput.addEventListener("input", () => {
 // -- check if input field is valid to prevent submiting invalid data,
 // -- show success message if form has been submitted
 
-button.addEventListener("click", () => {
+button.addEventListener("click", (event) => {
+    event.preventDefault();
     Validate();
     if (isValid) {
         userAdress.textContent = emailInput.value;
         message.classList.remove("d-none");
         console.log("form has been submited");
-        emailInput.removeEventListener("input", () => {
-            Validate();
-        });
     }
 });
 

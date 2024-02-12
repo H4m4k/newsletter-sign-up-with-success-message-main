@@ -72,8 +72,12 @@ body {
     max-width: 375px;
 }
 
-.form__list {
-    list-style-image: url(/assets/images/icon-list.svg);
+.list {
+    list-style: none;
+
+    &__item {
+        background: url(/assets/images/icon-list.svg) left center no-repeat;
+    }
 }
 
 #mail_input {
@@ -82,6 +86,7 @@ body {
 
     &:hover {
         box-shadow: 3px 4px 15px var(--h4-btn-orange);
+        border: 2px solid black;
     }
 
     &:focus {
@@ -112,6 +117,10 @@ body {
         top: 50%;
         left: 50%;
         transform: translate(-50%, 50%);
+    }
+
+    .container {
+        height: 90svh;
     }
 }
 
