@@ -3,6 +3,7 @@ const emailInput = document.querySelector("#mail_input");
 const error = document.querySelector("#error");
 const userAdress = document.querySelector("#user-email");
 const button = document.querySelector("#submit_btn");
+const veil = document.querySelector(".veil");
 
 const message = document.querySelector("#message");
 const dismiss = document.querySelector("#dismiss");
@@ -44,6 +45,7 @@ button.addEventListener("click", (event) => {
     if (isValid) {
         userAdress.textContent = emailInput.value;
         message.classList.remove("d-none");
+        veil.classList.remove("d-none");
         console.log("form has been submited");
     }
 });
@@ -52,5 +54,6 @@ button.addEventListener("click", (event) => {
 
 dismiss.addEventListener("click", () => {
     message.classList.add("d-none");
+    veil.classList.add("d-none");
     emailInput.classList.remove("error", "invalid");
 });

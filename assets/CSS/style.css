@@ -87,14 +87,23 @@ body {
     font-size: 3.5rem;
   }
   .message {
-    max-height: 50%;
-    border: 10px solid skyblue;
+    max-height: 40%;
+    min-width: 500px;
+    max-width: 33%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, 50%);
   }
   .container {
     height: 90svh;
+  }
+  .veil {
+    position: absolute;
+    top: 0;
+    background: hsl(235, 18%, 26%);
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 }
 /* Atribution */
