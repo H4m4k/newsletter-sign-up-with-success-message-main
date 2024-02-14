@@ -34,7 +34,7 @@
 
 <body class="body row g-0">
 
-  <div
+  <main
     class="container d-lg-flex flex-lg-row-reverse align-items-lg-center custom-width p-lg-4 m-lg-auto g-0 col-lg-8 align-items-lg-center bg-white">
 
 
@@ -64,22 +64,22 @@
 
         <form autocomplete="off">
 
-          <label for="mail" class="form-label fw-bold small w-100 d-flex">Email address
-            <span type="alert" id="error" class="text-danger text-end ms-auto small d-none">Valid email
+          <label for="mail_input" class="form-label fw-bold small w-100 d-flex">Email address
+            <span id="error" class="text-danger text-end ms-auto small d-none">Valid email
               required</span>
           </label>
 
-          <input type="text" id="mail_input" class="form-control mb-4 p-3" placeholder="email@company.com"
+          <input type="email" id="mail_input" class="form-control mb-4 p-3" placeholder="email@company.com"
             pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"
-            required maxlength="45" />
+            required maxlength="45">
 
           <button id="submit_btn" class="btn btn-h4-dark py-3 w-100">Subscribe to monthly newsletter</button>
 
         </form>
 
       </section>
-
-  </div>
+    </article>
+  </main>
   <!-- Sign-up form end -->
 
 
@@ -91,7 +91,7 @@
     class="message px-4 px-lg-5 d-flex flex-column h-100 justify-content-center position-absolute h-100 bg-white top-0 mx-auto rounded-5 d-none">
 
     <div class="mb-5 my-auto">
-      <img src="/assets/images/icon-success.svg" alt="" srcset="">
+      <img src="/assets/images/icon-success.svg" alt="success icon">
     </div>
 
     <h2 class="display-3 fw-bold mb-4">Thanks for subscribing!</h2>
@@ -115,7 +115,7 @@
   </footer>
 
   <!-- Success message end -->
-  </article>
+
 
   <script src="/assets/JS/validation.js"></script>
   <script src=" 	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
