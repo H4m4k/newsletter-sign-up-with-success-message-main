@@ -19,13 +19,6 @@
   --bs-btn-bg: var(--h4-n-dark-slate-gray);
   --bs-btn-border-color: #212529;
   --bs-btn-hover-color: var(--h4-n-white);
-  --bs-btn-focus-shadow-rgb: 66, 70, 73;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #4d5154;
-  --bs-btn-active-border-color: #373b3e;
-  --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #212529;
-  --bs-btn-disabled-border-color: #212529;
 }
 
 .btn-h4-dark:hover {
@@ -79,9 +72,16 @@ body {
   opacity: 0.6;
 }
 
+.container {
+  border-radius: 10px;
+}
+
 @media screen and (min-width: 992px) {
+  .body {
+    background: var(--h4-n-charcoal-grey);
+  }
   .custom-width {
-    max-width: 1440px;
+    max-width: 1000px;
   }
   .display-2 {
     font-size: 3.5rem;
@@ -94,23 +94,22 @@ body {
     left: 50%;
     transform: translate(-50%, 50%);
   }
-  .container {
-    height: 90svh;
-  }
   .veil {
     position: absolute;
     top: 0;
-    background: hsl(235, 18%, 26%);
+    background: var(--h4-n-charcoal-grey);
     bottom: 0;
     left: 0;
     right: 0;
   }
 }
 /* Atribution */
-.attribution {
+.footer {
   font-size: 11px;
   text-align: center;
+  position: absolute;
+  bottom: 10px;
 }
-.attribution a {
+.footer a {
   color: hsl(245, 46%, 45%);
 }/*# sourceMappingURL=style.css.map */
